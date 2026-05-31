@@ -1,0 +1,28 @@
+{
+  "name": "azure-openai-responses-proxy",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that proxies Azure OpenAI Chat Completion API and exposes both OpenAI Chat Completion API and the new OpenAI Responses API",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "keywords": [
+    "cloudflare-worker",
+    "azure-openai",
+    "openai",
+    "responses-api",
+    "chat-completions",
+    "proxy"
+  ],
+  "author": "Andy Allan",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260530.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7",
+    "wrangler": "^4.95.0"
+  }
+}
